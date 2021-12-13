@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>sami training</title>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto"><a href="index.html" style="margin-left: 2%;">
+                جمعية 
+                <span>المهندسين</span></a></h1>
+
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="#hero" style="color: black;">
+                        الرئيسية
+                    </a></li>
+                    <li><a class="nav-link scrollto" href="#about">
+                        من نحن
+                    </a></li>
+                    <li><a class="nav-link scrollto" href="#services">خدماتنا</a></li>
+                    <li><a class="nav-link scrollto active" href="#portfolio">
+                        التدريب
+                    </a></li>
+                    <li><a class="nav-link scrollto" href="#team">فريقنا</a></li>
+
+                    <li><a class="nav-link scrollto" href="#contact">تواصل معنا</a></li>
+                    <li><a class="nav-link scrollto" href="index.html"> eng</a></li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row">
+
+
+
+
+
+
+
+
+                <div class="searchbox">
+                    <span class="title">البحث في الدورات </span>
+                    <form action="/ar/course-search.html" name="frm_search" method="post">
+                        <div class="box"> الشهر<br>
+                            <div class="field">
+                                <select name="month" id="month">
+                        <option value="">الكل</option>
+                                                                            <option value="1">يناير</option>
+                                                                                <option value="2">فبراير</option>
+                                                                                <option value="3">مارس</option>
+                                                                                <option value="4">ابريل</option>
+                                                                                <option value="5">مايو</option>
+                                                                                <option value="6">يونيو</option>
+                                                                                <option value="7">يوليو</option>
+                                                                                <option value="8">اغسطس</option>
+                                                                                <option value="9">سبتمبر</option>
+                                                                                <option value="10">اكتوبر</option>
+                                                                                <option value="11">نوفمبر</option>
+                                                                                <option value="12">ديسمبر</option>
+                                                          </select>
+                            </div>
+                        </div>
+                        <div class="box"> السنة<br>
+                            <div class="field small">
+                                <select name="year" id="year">
+                                                                            <option value="2012">2012</option>
+                                                                                <option value="2013">2013</option>
+                                                                                <option value="2014">2014</option>
+                                                                                <option value="2015">2015</option>
+                                                                                <option value="2016">2016</option>
+                                                                                <option value="2017">2017</option>
+                                                                                <option value="2018">2018</option>
+                                                                                <option value="2019">2019</option>
+                                                                                <option value="2020">2020</option>
+                                                                                <option value="2021" selected="selected">2021</option>
+                                                                                <option value="2022">2022</option>
+                                                                                <option value="2023">2023</option>
+                                                          </select>
+                            </div>
+                        </div>
+                        <div class="box"> المدة<br>
+                            <div class="field small" style="margin-right:0px;">
+                                <select name="duration" id="duration">
+                        <option value="">الكل</option>
+                                                                            <option value="1">1-5</option>
+                                                                                <option value="6">6-10</option>
+                                                                                <option value="11">11-15</option>
+                                                                                <option value="16">16-20</option>
+                                                                                <option value="21">21-25</option>
+                                                                                <option value="26">26-30</option>
+                                                          </select>
+                            </div>
+                        </div>
+                        <div class="box">الفئة
+                            <div class="field">
+                                <select name="category" id="category" onchange="if (this.value != '') {
+                                                document.getElementById('program').value = '';
+                                            }">
+                        <option value="">الكل</option>
+                                                                            <option value="24">القيادة، الإدارة، التخطيط الاستراتيجي، الموارد البشرية والمهارات الشخصية</option>
+                                                                                <option value="21">برامج إدارة المشاريع</option>
+                                                                                <option value="45">تقنية المعلومات والحاسب الألى</option>
+                                                                                <option value="29">هندسة نمذجة معلومات البناء</option>
+                                                                                <option value="30">الهندسة المعمارية والحضرية والمسطحات الخضراء</option>
+                                                                                <option value="31">إدارة الانشاءات، والعقود والمناقصات، والتسعير وتقدير التكاليف</option>
+                                                                                <option value="32">الهندسة الكهربائية والالكترونية</option>
+                                                                                <option value="33">المالية والمحاسبة</option>
+                                                                                <option value="34">الهندسة الصناعية والتحكم في العمليات</option>
+                                                                                <option value="35">الريادة في الطاقة والتصميم البيئي والاستدامة</option>
+                                                                                <option value="36">التشغيل والصيانة وإدارة المرافق والاصول</option>
+                                                                                <option value="37">الهندسة الميكانيكية</option>
+                                                                                <option value="38">هندسة النفط والغاز</option>
+                                                                                <option value="39">الجودة -المراقبة والضمان والادارة</option>
+                                                                                <option value="40">التطوير العقاري</option>
+                                                                                <option value="51">مؤتمرات</option>
+                                                                                <option value="42">السلامة والامن ومنع الحرائق والاستجابة للطوارئ</option>
+                                                                                <option value="43">الهندسة الانشائية والخرسانة والمواد</option>
+                                                                                <option value="44">التوريد والمشتريات والنقل والامداد</option>
+                                                                                <option value="46">شهادة البرنامج المتكامل في إدارة الخلافات الفنية في المشاريع والعقود - كلية كونراد (جامعة واترلوو- كندا)</option>
+                                                                                <option value="47">البرنامج العالمي في إدارة العقود الهندسية والتشييد المتكامل – معتمد عالميا</option>
+                                                                                <option value="48">شهادة الماسترز في إدارة المشاريع - جامعة كولورادو (امريكا)</option>
+                                                                                <option value="49">مجالات المعرفة لإدارة المشاريع وفقا للمعيار العالمي الموحد - معتمد عالميا</option>
+                                                                                <option value="50">مجموعة عمليات ادارة المشاريع المتكاملة وفقا للمعيار العالمي الموحد - معتمد عالميا</option>
+                                                                                <option value="52">ادارة المرافق</option>
+                                                                                <option value="53">أدارة المنتجات والخدمات</option>
+                                                                                <option value="54">دورات عبر الانترنت</option>
+                                                                                <option value="55">التواصل الاجتماعي, ادارة, استراتيجيات, موارد بشرية و مهارات شخصية</option>
+                                            
+                      </select>
+                            </div>
+                        </div>
+                        <div class="box"> البرامج التدريبية <br>
+                            <div class="field" style="margin-right:0px;">
+                                <select name="program" id="program" onchange="if (this.value != '') {
+                                                document.getElementById('category').value = '';
+                                            }">
+                        <option value="">الكل</option>
+                                                                            <option value="4">جامعة كلية كونراد (جامعة واترلوو) بالتعاون مع بروجاكس تقدم شهادة البرنامج المتكامل في إدارة الخلافات لمدراء المشاريع والعقود (CMC)</option>
+                                                                                <option value="1">برنامج إدارة العقود الهندسية وعقود التشييد المتكامل ECCM</option>
+                                                                                <option value="3">بالتعاون مع جامعة هيوستن (الولايات المتحدة الأمريكية) بروجاكس تقدم شهادة الماسترز في إدارة المشاريع (MCPM)</option>
+                                                                                <option value="5">البرنامج الأول في ادارة المشاريع طبقا لمجالات المعرفة التسعة PMK</option>
+                                                                                <option value="7">مجموعة العمليات المتكاملة لادارة المشروعات وفقا للمقياس العالمي الموحد - معتمد عالميا(PMP) ®</option>
+                                            
+                      </select>
+                            </div>
+                        </div>
+                        <div class="box">المكان <br>
+                            <div class="field">
+                                <select name="location" id="location">
+                        <option value="">الكل</option>
+                                                                            <option value=""></option>
+                                                                                <option value="74">Barcelona / Spain</option>
+                                                                                <option value="8">Cairo / Egypt</option>
+                                                                                <option value="11">Dubai / UAE</option>
+                                                                                <option value="13">Geneva / Switzerland</option>
+                                                                                <option value="15">Istanbul / Turkey</option>
+                                                                                <option value="16">Kuala Lumpur / Malaysia</option>
+                                                                                <option value="18">London / UK</option>
+                                                                                <option value="22">Muscat / Oman</option>
+                                                                                <option value="219">ONLINE</option>
+                                                                                <option value="33">أبــو ظـبــي / الامارات العربـيـة المتـحـدة</option>
+                                                                                <option value="30">أمستردام / هولندا</option>
+                                                                                <option value="31">أوكلاند / نيوزيلاندا</option>
+                                                                                <option value="210">إنترلاكن / سويسرا</option>
+                                                                                <option value="213">ازمير / تركيا</option>
+                                                                                <option value="34">اسطنبول / تركيا</option>
+                                                                                <option value="35">الاردن</option>
+                                                                                <option value="36">البحرين</option>
+                                                                                <option value="38">الدوحة / قطر</option>
+                                                                                <option value="39">الرياض / المملكة العربية السعودية</option>
+                                                                                <option value="221">الشارقة / الامارات العربية المتحدة</option>
+                                                                                <option value="55">القاهرة / مصر</option>
+                                                                                <option value="40">الكويت</option>
+                                                                                <option value="41">اورلاندو / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="227">باتومي / جورجيا</option>
+                                                                                <option value="42">باريس / فرنـسـا</option>
+                                                                                <option value="217">باكو / أذربيجان</option>
+                                                                                <option value="195">براغ / التشيك</option>
+                                                                                <option value="77">برشلونة / إسبانيا</option>
+                                                                                <option value="53">بـيـروت / لـبـنـان</option>
+                                                                                <option value="216">تبليسي / جورجيا</option>
+                                                                                <option value="105">تورنتو / كندا</option>
+                                                                                <option value="159">جدة / المملكة العربية السعودية</option>
+                                                                                <option value="69">جنيف / سويسرا</option>
+                                                                                <option value="45">دبـــي / الامـارات الـعـربــيـة الـمـتـحـدة</option>
+                                                                                <option value="158">روما / إيطاليا</option>
+                                                                                <option value="72">زيورخ / سويسرا</option>
+                                                                                <option value="67">سان دييغو – كاليفورنيا / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="84">سان فرانسيسكو / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="47">سنغافورة</option>
+                                                                                <option value="162">سيؤول / كوريا الجنوبية</option>
+                                                                                <option value="82">سياتل / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="157">سيدني / استراليا</option>
+                                                                                <option value="230">شرم الشيخ / مصر</option>
+                                                                                <option value="181">شيكاغو / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="46">صلالة / عمان</option>
+                                                                                <option value="223">طرابزون / تركيا</option>
+                                                                                <option value="62">طنجة / المغرب</option>
+                                                                                <option value="160">طوكيو / اليابان</option>
+                                                                                <option value="167">فانكوفر / كندا</option>
+                                                                                <option value="135">فرانكفورت / ألمانيا</option>
+                                                                                <option value="50">فـييـنا / النـمـسـا</option>
+                                                                                <option value="197">كان / فرنسا</option>
+                                                                                <option value="52">كوالالـمـبـور / مالـيـزيـا</option>
+                                                                                <option value="229">كييف / اوكرانيا</option>
+                                                                                <option value="190">لاروشيل / فرنـسـا</option>
+                                                                                <option value="54">لندن / المملكة المتحدة</option>
+                                                                                <option value="166">لوس انجلوس - كاليفورنيا / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="193">ماربيلا / اسبانيا</option>
+                                                                                <option value="143">مانيلا / الفلبين</option>
+                                                                                <option value="154">مسقط / سلطنة عُمان</option>
+                                                                                <option value="225">ملقا / اسبانيا</option>
+                                                                                <option value="184">مونبلييه / فرنسا</option>
+                                                                                <option value="139">ميامي - فلوريدا / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="151">ميلانو / إيطاليا</option>
+                                                                                <option value="136">ميونخ / المانيا</option>
+                                                                                <option value="202">نورتون - أوهايو / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="64">نيويورك / الولايات المتحدة الأمريكية</option>
+                                                                                <option value="86">هيوستن - تكساس / الولايات المتحدة الامريكية</option>
+                                                                                <option value="200">ولاية ميتشجن - ديترويت / الولايات المتحدة الأمريكية</option>
+                                            
+                      </select>
+                            </div>
+                        </div>
+                        <div class="box"> رقم البرنامج <br>
+                            <div class="field" style="margin-right:0px; background-image:none;">
+                                <input type="text" name="course_id" value="" style="width:220px;">
+                            </div>
+                        </div>
+                        <div class="box"> البحث من خلال كلمة <br>
+                            <div class="field" style="margin-right:0px; background-image:none;">
+                                <input type="text" name="course_title" value="" style="width:220px;">
+                            </div>
+                        </div>
+                        <div class="box" style="padding-left:25px;">
+                            <input name="SEARCH" type="button" value="البحث" onclick="this.form.submit();">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-xl-6 oussamah2">
+                    <h1>المهنية والجودة في تقديم البرامج التدريبية </h1>
+                    <h2>العقود وإدارة المخاطر، إعداد المواصفات والطرح والترسية</h2>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+
+    <!-- ==================search form================= -->
+
+    <!-- ==================////search form================= -->
+
+
+
+
+
+
+
+
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs">
+        <h1 style="text-align: center; margin-bottom: 40px;">
+            الـــــدورات التــدريـــــبية
+        </h1>
+        <div class="container" data-aos="fade-up">
+
+            <ul class="nav nav-tabs row d-flex">
+                <li class="nav-item col-3">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                        <i class="ri-gps-line"></i>
+                        <h4 class="d-none d-lg-block">
+                            الدورات الهندسيه في إدارة المشاريع
+
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <i class="ri-body-scan-line"></i>
+                        <h4 class="d-none d-lg-block">
+
+                            الدورات في إدارة البناء والعقود والمناقصات
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                        <i class="ri-sun-line"></i>
+                        <h4 class="d-none d-lg-block">
+
+                            الدورات في الصيانة و السلامة المهنية
+                        </h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                        <i class="ri-store-line"></i>
+                        <h4 class="d-none d-lg-block">
+                            الدورات في القيادة واإلدارة واالستراتيجية
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+            <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100" style="background-color: #ff7f5036; padding: 10px; border-radius: 26px;">
+                            <h3>
+                                المهنية والتخصص واالحتراف في إدارة المشاريع– البرنامج االصلي للتحضير لشهادة مدير مشروع محترف/معتمد عالميا
+
+                            </h3>
+                            <p class="fst-italic">
+                                تعريف او لمحة عن هذه الدورات
+                            </p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –</li>
+                                <li><i class="ri-check-double-line"></i> رة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة.</li>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –.</li>
+                            </ul>
+                            <p>
+                                ممارس معتمد في إدارة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة في الوقت المناسب من التخطيط ووضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار – معتمد عالمياً
+                            </p>
+                            <a href="#about" class="btn-get-started scrollto">
+                                عرض مزيد التفاصيل
+                            </a>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img src="assets/img/1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" style="background-color: #5e86d036; padding: 10px; border-radius: 26px;">
+                            <h3>مهنية والتخصص واالحتراف في إدارة المشاريع– البرنامج االصلي للتحضير لشهادة</h3>
+                            <p>
+                                ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاخ
+                            </p>
+                            <p class="fst-italic">
+                                تعريف او لمحة عن هذه الدورات
+                            </p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –</li>
+                                <li><i class="ri-check-double-line"></i> رة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة.</li>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –.</li>
+                            </ul>
+                            <p>
+                                ممارس معتمد في إدارة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة في الوقت المناسب من التخطيط ووضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار – معتمد عالمياً
+                            </p>
+                            <a href="#about" class="btn-get-started scrollto">
+                                عرض مزيد التفاصيل
+                            </a> </div>
+
+
+
+
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/2.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" style="background-color: #f3ff5036; padding: 10px; border-radius: 26px;">
+                            <h3>
+                                التخطيط ووضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء
+                            </h3>
+                            <p>
+                                ممارس معتمد في إدارة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة في الوقت المناسب من التخطيط ووضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار – معتمد عالمياً
+
+                            </p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –.</li>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –.</li>
+                                <li><i class="ri-check-double-line"></i> رة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة.</li>
+                            </ul>
+                            <p class="fst-italic">
+                                ضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختب </p>
+                            <a href="#about" class="btn-get-started scrollto">
+                                    عرض مزيد التفاصيل
+                                </a>
+                        </div>
+
+
+
+
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" style="background-color: #5ce66331; padding: 10px; border-radius: 26px;">
+                            <h3>
+                                المهنية والتخصص واالحتراف في إدارة المشاريع– البرنامج االصلي للتحضير لشهادة مدير مشروع محترف/معتمد عالميا
+
+                            </h3>
+                            <p class="fst-italic">
+                                تعريف او لمحة عن هذه الدورات
+                            </p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –</li>
+                                <li><i class="ri-check-double-line"></i> رة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة.</li>
+                                <li><i class="ri-check-double-line"></i> وضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار –.</li>
+                            </ul>
+                            <p>
+                                ممارس معتمد في إدارة المشاريع الرشيقة بمهارة عمل الشيئ الصحيح بالطرق الصحيحة في الوقت المناسب من التخطيط ووضع الأهداف ومراحل التنفيذ والبدء بالعمل وتصحيح الاخطاء - التحضير للاختبار – معتمد عالمياً
+                            </p>
+                            <a href="#about" class="btn-get-started scrollto">
+                                عرض مزيد التفاصيل
+                            </a>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/4.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Tabs Section -->
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
